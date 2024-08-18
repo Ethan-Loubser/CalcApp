@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalcApp.MainPage">
+
+    <StackLayout Padding="20">
+        <Frame Margin="20,20,20,20" BackgroundColor="Snow" BorderColor="Black" Padding="24" CornerRadius="0" HasShadow="True">
+            <Label x:Name="LblResult" Text="0" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36" HorizontalOptions="End"/>
+        </Frame>
+
+        <Grid Margin="0,140,0,0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="C" Clicked="btnClear_Clicked" x:Name="btnClear" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="0" Grid.Column="0" Padding="25"/>
+            <Button Text="X" Clicked="btnX_Clicked" x:Name="btnX" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="0" Grid.Column="1" Padding="25"/>
+            <Button Text="%" Clicked="btnPerc_Clicked" x:Name="btnPerc" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="0" Grid.Column="2" Padding="25"/>
+            <Button Text="/" Clicked="CommonOP_Clicked" x:Name="btnDiv" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="0" Grid.Column="3" Padding="25"/>
+
+
+            <Button Text="7" Clicked="Common_Clicked" x:Name="btnSeven" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="1" Grid.Column="0" Padding="25"/>
+            <Button Text="8" Clicked="Common_Clicked" x:Name="btnEight" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="1" Grid.Column="1" Padding="25"/>
+            <Button Text="9" Clicked="Common_Clicked" x:Name="btnNine" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="1" Grid.Column="2" Padding="25"/>
+            <Button Text="*" Clicked="CommonOP_Clicked" x:Name="btnMult" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="1" Grid.Column="3" Padding="25"/>
+
+            <Button Text="4" Clicked="Common_Clicked" x:Name="btnFour" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="2" Grid.Column="0" Padding="25"/>
+            <Button Text="5" Clicked="Common_Clicked" x:Name="btnFive" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="2" Grid.Column="1" Padding="25"/>
+            <Button Text="6" Clicked="Common_Clicked" x:Name="btnSix" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="2" Grid.Column="2" Padding="25"/>
+            <Button Text="+" Clicked="CommonOP_Clicked" x:Name="btnAdd" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="2" Grid.Column="3" Padding="25"/>
+
+            <Button Text="1" Clicked="Common_Clicked" x:Name="btnOne" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="3" Grid.Column="0" Padding="25"/>
+            <Button Text="2" Clicked="Common_Clicked" x:Name="btnTwo" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="3" Grid.Column="1" Padding="25"/>
+            <Button Text="3" Clicked="Common_Clicked" x:Name="btnThree" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="3" Grid.Column="2" Padding="25"/>
+            <Button Text="-" Clicked="CommonOP_Clicked" x:Name="btnSub" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="3" Grid.Column="3" Padding="25"/>
+
+            <Button Text="0" Clicked="Common_Clicked" x:Name="btnZero" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Padding="25"/>
+            <Button Text="." Clicked="Common_Clicked" x:Name="btnDot" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="4" Grid.Column="2" Padding="25"/>
+            <Button Text="=" Clicked="btnResult_Clicked" x:Name="btnResult" TextColor="Snow" FontAttributes="Bold" FontSize="Large" BackgroundColor="Gray" Grid.Row="4" Grid.Column="3" Padding="25"/>
+
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
